@@ -1,17 +1,7 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
 body {
-  /* animation: changeBg 15s infinite alternate linear; */
   background: black;
 }
 
-/* @keyframes changeBg {
-  0% {
-    background: black;
-  }
-  100% {
-    background: #6C00B5;
-  }
-}
 
-*/
