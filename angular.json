@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "allowedCommonJsDependencies": [
-              "lodash"
+              "t-writer"
            ],
             "outputPath": "dist/T_W_Project",
             "index": "src/index.html",
