@@ -1,7 +1,7 @@
 
 .container-fluid {
   margin: auto;
-  margin-top: 150px;
+  margin-top: 130px;
 }
 
 .team_section {
@@ -17,15 +17,18 @@
 .team_section .heading_container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
+          justify-content: space-between;
 }
 
-.team_section .team_container {
+.team_section .team_container .row{
   padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .team_section .team_container .box {
   padding: 35px 0 0 0;
+  height: 320px;
   border-radius: 5px;
   overflow: hidden;
   -webkit-transition: all .1s;
@@ -46,6 +49,7 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
 
 .team_section .team_container .box .img-box img {
   width: 120px;
@@ -93,5 +97,89 @@
   }
   100% {
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 255, 0.5); /* Collapse back to no shadow */
+  }
+}
+
+
+/***********************/
+
+
+
+.container .card {
+  margin: auto;
+  margin-top: 150px;
+  background: #191c29;
+  width: 600px;
+  height: 340px;
+  padding: 3px;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+  font-family: cursive;
+  background-image: url("/assets/front.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.4s ease-in-out;
+  animation: border-gradient 5s infinite alternate linear;
+  animation: pulse-shadow 5s infinite ease-in-out;
+}
+
+ .container .card:hover {
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.4 ease-in-out;
+  background-image: url("/assets/back.png");
+ }
+
+
+@keyframes border-gradient {
+  0% {
+    border: 5px solid white;
+  }
+  100% {
+    border: 5px solid black;
+  }
+}
+@keyframes pulse-shadow {
+  0% {
+    box-shadow: 0 0 9px 4px black;
+  }
+  50% {
+    box-shadow: 0 0 8px 5px #6C00B5;
+  }
+  100% {
+    box-shadow: 0 0 10px 3px black;
+  }
+}
+
+@media only screen and (max-width:773px) {
+  .container .card {
+    width: 500px;
+    height: 280px;
+  }
+}
+@media only screen and (max-width:525px) {
+  .container .card {
+    width: 385px;
+    height: 218px;
+  }
+
+}
+@media only screen and (max-width:430px) {
+  .container .card {
+    width: 350px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width:381px) {
+  .container .card {
+    width: 300px;
+    height: 170px;
   }
 }
