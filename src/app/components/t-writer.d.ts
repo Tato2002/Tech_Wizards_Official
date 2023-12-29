@@ -1,4 +1,4 @@
-declare module 't-writer.js';
+// declare module 't-writer.js';
 
 
 // <meta name="keywords" content="techwiz, tecwiz, techwizard, Georgia, web development, Batumi, Tbilisi, frontend, backend,batumi web development, web design, saqartvelo, saiti, saitebi, saitis shekveta, web servisi, აიტი მომსახურება, საიტი, ვებსაიტი, ონლაინ პლატფორმა, ბიზნესი ონლაინ, ტექ ვიზარდს, ტექ, tech wizards, tech, wizards, wizard, ვებ სერვისი, ციფრული მემკვიდრეობა">
