@@ -1,0 +1,54 @@
+<div class="wrapper">
+  <div class="title-text">
+     <div class="title login">
+        ფორმა
+     </div>
+  </div>
+  <div class="form-container">
+     <div class="slide-controls">
+        <input type="radio" name="slide" id="login" checked>
+        <input type="radio" name="slide" id="signup">
+        <label #loginBtn for="login" class="slide login">ავტორიზაცია</label>
+        <label #signupBtn for="signup" class="slide signup">რეგისტრაცია</label>
+        <div class="slider-tab"></div>
+     </div>
+     <div class="form-inner">
+        <form [formGroup]="signinForm" #loginForm class="login" (ngSubmit)="onSignin()">
+           <div class="field">
+            <p class="text-danger">{{error}}</p>
+              <input formControlName="email" #loginText type="text" placeholder="Email">
+           </div>
+           <div class="field loginpassfield">
+              <input formControlName="password" [type]="changetype?'password':'text'" placeholder="Password">
+              <span class="eyeicon" (click)="viewPass()"><i [ngClass]="visible?'bi bi-eye-slash':'bi bi-eye'"></i></span>
+           </div>
+           <div class="pass-link">
+              <a routerLink="">დაგავიწყდა პაროლი?</a>
+           </div>
+           <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="შესვლა" [disabled]="!signinForm.valid" (click)="onSignin()" >
+           </div>
+        </form>
+
+        <form [formGroup]="signupForm" class="signup" (ngSubmit)="onSignup()">
+           <div class="field">
+            <p class="text-danger">{{error2}}</p>
+              <input formControlName="email" type="text" placeholder="ელ. ფოსტა">
+           </div>
+           <div class="field signuppassfield">
+              <input formControlName="password" [type]="changetype?'password':'text'" id="password" placeholder="პაროლი">
+              <span class="eyeicon" (click)="viewPass()"><i [ngClass]="visible?'bi bi-eye-slash':'bi bi-eye'"></i></span>
+           </div>
+           <div class="field signuppassfield2">
+              <input formControlName="confirmPassword" [type]="changetype2?'password':'text'" placeholder="დაადასტურე პაროლი">
+              <span class="eyeicon" (click)="viewPass2()"><i [ngClass]="visible2?'bi bi-eye-slash':'bi bi-eye'"></i></span>
+           </div>
+           <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="რეგისტრაცია" [disabled]="!signupForm.valid" (click)="reset()">
+           </div>
+        </form>
+     </div>
+  </div>
+</div>

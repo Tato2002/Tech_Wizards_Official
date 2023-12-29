@@ -1,0 +1,27 @@
+
+<!-- <div class="container">
+  <div class="card"></div>
+</div>
+
+<div class="container sup-container">
+  <div class="card2"></div>
+  <div class="hover-text text-white">
+    <h2 class="text-center mb-3">მარტივად</h2>
+    <p class="text-center">{{hoverText}}</p>
+    <br>
+    <p class="text-center">{{hoverText2}}</p>
+
+  </div>
+</div> -->
+
+<button class="unmuteVideo" (click)="unmuteV()"><i class="bi bi-volume-up"></i></button>
+
+<video #myVideo class="intro1" [autoplay]="true" [muted]="true">
+  <source src="assets/intro1.mp4" type="video/mp4">
+</video>
+<video #myVideo class="intro2" [autoplay]="true" [muted]="true">
+  <source src="assets/intro2.mp4" type="video/mp4">
+</video>
+<video #myVideo class="intro3" [autoplay]="true" [muted]="true">
+  <source src="assets/intro3.mp4" type="video/mp4">
+</video>

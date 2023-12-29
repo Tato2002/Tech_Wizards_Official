@@ -1,0 +1,39 @@
+<div class="container">
+ <h2 class="text-white text-center mb-5" >რჩეული ელექტრონიკა</h2>
+  <div class="cart-nav" #cart routerLink="/cart">
+    <div class="icon">
+      <i class="bi bi-cart3" style="margin-right: 5px;"></i>
+      <span>Cart</span>
+    </div>
+    <div class="item-count">{{count}}</div>
+  </div>
+
+  <div class="wrapper">
+
+    <div class="card" *ngFor="let product of products; index as i">
+      <img src="{{product.pImgUrl1}}" alt="">
+      <div class="content">
+        <div class="row">
+          <div class="details">
+            <span>{{product.pName}}</span>
+            <p>{{product.pDescLong}}</p>
+            <p>მარაგშია: {{product.pQuantity}} ცალი</p>
+          </div>
+          <div class="price">{{product.pPrice}}₾</div>
+        </div>
+
+            <div class="buttons">
+              <button style="width: 100%;" (click)="onProductClick(i+1)">დეტალურად</button>
+
+              <button>ყიდვა</button>
+              <button class="cart-btn" (click)="onAddToCart($event)">კალათაში დამატება</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  </div>
+
+
+
+

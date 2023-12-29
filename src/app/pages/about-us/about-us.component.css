@@ -1,0 +1,97 @@
+
+.container-fluid {
+  margin: auto;
+  margin-top: 150px;
+}
+
+.team_section {
+  border-radius: 8px;
+  padding: 0px 0px 40px 20px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(220, 235, 255, 0.8));
+  animation: pulsatingShadow 2s ease-in-out infinite;
+  text-align: center;
+  background-color: #00204a;
+  color: #ffffff;
+}
+
+.team_section .heading_container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team_section .team_container {
+  padding: 0 15px;
+}
+
+.team_section .team_container .box {
+  padding: 35px 0 0 0;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+  margin-top: 45px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#002759), to(#002b64));
+  background: linear-gradient(to bottom, #002759, #002b64);
+}
+
+.team_section .team_container .box .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team_section .team_container .box .img-box img {
+  width: 120px;
+  border-radius: 100%;
+  border: 5px solid #ffffff;
+}
+
+.team_section .team_container .box .detail-box {
+  margin: 25px 0;
+}
+
+.team_section .team_container .box .detail-box h5 {
+  color: white;
+  font-weight: 600;
+  position: relative;
+}
+
+.team_section .team_container .box .social_box {
+  padding: 10px 45px 20px 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team_section .team_container .box .social_box a {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.team_section .team_container .box .social_box a:hover {
+  color: #00bbf0;
+}
+
+
+
+@keyframes pulsatingShadow {
+  0% {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 255, 0.5); /* Start with no shadow */
+  }
+  50% {
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 255, 0.5); /* Expand to full shadow */
+  }
+  100% {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 255, 0.5); /* Collapse back to no shadow */
+  }
+}

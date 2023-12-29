@@ -1,0 +1,71 @@
+
+<div class="container mb-5">
+  <h3 class="div text-white text-center">გაეცანით დეტალურად</h3>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header superitem">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          {{example[0].title}}
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+
+          <div class="d-flex justify-content-around align-items-center text-white">
+            <img src="{{example[0].image}}">
+            <div class="text superps">
+              <p>{{example[0].description1}}</p><code style="opacity: 0;"></code>
+              <p>{{example[0].description2}}</p>
+              <p>{{example[0].description3}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item" *ngFor="let acItem of accordion">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#'+ acItem.collapse" aria-expanded="true" [attr.aria-controls]="'#'+ acItem.collapse">
+            {{acItem.title}}
+          </button>
+        </h2>
+        <div id="{{acItem.collapse}}" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+
+            <div class="d-flex justify-content-around align-items-center text-white">
+              <img src="{{acItem.image}}">
+              <div class="text">
+              <p>{{acItem.description1}}</p><code style="opacity: 0;"></code>
+              <p>{{acItem.description2}}</p>
+              <p>{{acItem.description3}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+  <section class="about_section layout_padding">
+    <div class="container2  ">
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="assets/another.gif" alt="gif">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h3>
+
+            </h3>
+            <p>
+              ინდივიდუალური <br><hr>
+
+              1$ - დან თქვენი ფანტაზიის მიღმა
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

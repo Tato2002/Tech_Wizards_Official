@@ -1,0 +1,133 @@
+
+ .container {
+  width:100%;
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+
+.container .accordion-item img {
+  width: 300px;
+  height: fit-content;
+  border-radius: 30px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+.container .accordion-item .text {
+  color: black;
+}
+.container .accordion-item {
+  margin-top: 50px;
+  border: 2px solid #AFAFB6;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(220, 235, 255, 0.8));
+  border-color: transparent !important;
+  padding: 40px;
+  box-shadow: 0px 4px 15px rgba(156, 39, 176, 0.6),
+  0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button {
+  background:#6d00b5a4;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+.accordion-body div{
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+.accordion-body div .text {
+  max-width: 500px;
+}
+.accordion-item:not(:last-child) {
+  margin-bottom: 100px;
+}
+@media only screen and (max-width: 500px) {
+  .accordion-body div .text {
+    width: 100%;
+
+  }
+  .accordion-item {
+    padding: 10px;
+  }
+  .container .accordion-item img {
+    width: 250px;
+    margin-right: 0px;
+  }
+}
+
+.superitem {
+  animation: animateButton 2.8s ease-in-out infinite;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  color: white;
+}
+.superps p {
+  color: white;
+}
+@keyframes animateButton {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*********/
+.container2 {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.about_section {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(220, 235, 255, 0.8));
+  animation: pulsatingShadow 2s ease-in-out infinite;
+  border-radius: 20px;
+  color: #ffffff;
+  height: fit-content;
+}
+
+.about_section .heading_container {
+  margin-bottom: 45px;
+  padding-top: 30px;
+}
+
+.about_section .row {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: space-between;
+}
+
+.about_section .img-box img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 10px 0px;
+}
+
+.about_section .detail-box h3 {
+  font-weight: bold;
+}
+
+
+.about_section .detail-box p {
+  margin-top: 15px;
+}
+
+@keyframes pulsatingShadow {
+  0% {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 255, 0.5); /* Start with no shadow */
+  }
+  50% {
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 255, 0.5); /* Expand to full shadow */
+  }
+  100% {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 255, 0.5); /* Collapse back to no shadow */
+  }
+}

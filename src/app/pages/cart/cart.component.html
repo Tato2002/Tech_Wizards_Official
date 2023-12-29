@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="user-profile d-flex align-items-center justify-content-left">
+    <img src="https://t4.ftcdn.net/jpg/04/83/90/95/360_F_483909569_OI4LKNeFgHwvvVju60fejLd9gj43dIcd.jpg" alt="profile image" class="m-3">
+    <p>{{username}}</p>
+  </div>
+  <div class="cart-bar">
+
+    <div class="product d-flex align-items-center">
+      <img src="{{productURL}}" alt="product">
+      <div class="row">
+        <p>რაოდენობა:
+          <a style="margin-left: 7px;">
+            <i class="bi bi-plus-lg" (click)="plusProduct()"></i>
+                  {{quantity}}
+            <i class="bi bi-dash-lg" (click)="minusProduct()"></i>
+          </a>
+        </p>
+        <p>დასახელება:
+          <a>
+            {{prductName}}
+          </a>
+        </p>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>

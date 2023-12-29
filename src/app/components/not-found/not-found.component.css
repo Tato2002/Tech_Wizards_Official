@@ -1,0 +1,8 @@
+.container {
+  margin-top: 100px;
+  flex-direction: column;
+}
+
+img {
+  height: 200px;
+}

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Montserrat:wght@700&family=Poppins:wght@300;500&display=swap');
+
+.card-wrapper{
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Libre Caslon Display', serif;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.img-display{
+    overflow: hidden;
+}
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.img-showcase img{
+    min-width: 100%;
+}
+.img-select{
+    display: flex;
+}
+.img-item{
+    margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
+}
+.product-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-content {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.product-title{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #12263a;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+.product-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 10px;
+    background: #6C00B5;
+    color: #fff;
+    padding:2px 8px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.product-price{
+    font-size: 1rem;
+    font-weight: 700;
+    width: 120px;
+}
+.product-price span{
+    font-weight: 400;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 4px;
+    background: #140B5C;
+}
+
+.product-detail h2{
+    color: #12263a;
+    padding-bottom: 15px;
+}
+.product-detail p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+.product-detail ul{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.purchase-info{
+  margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.purchase-info input,
+.purchase-info .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+.purchase-info input{
+    width: 60px;
+}
+.purchase-info .btn{
+    cursor: pointer;
+    color: #fff;
+}
+.purchase-info .btn{
+    background: #6C00B5;
+}
+
+.purchase-info .btn:hover{
+    opacity: 0.9;
+}
+
+.purchase-info :nth-child(2){
+  background: green ;
+}
+
+@media screen and (min-width: 992px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .card-wrapper{
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+}

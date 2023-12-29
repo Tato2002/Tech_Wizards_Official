@@ -1,0 +1,47 @@
+
+.container {
+  max-width: 900px;
+  background: white;
+  border: 10px solid  white;
+  height: 500px;
+  border-radius: 4px;
+
+}
+
+.user-profile img {
+  height: 60px;
+  border-radius: 50%;
+}
+.user-profile {
+  color: white;
+  background: #0f0844;
+  width: 100%;
+  border-radius: 4px;
+}
+.cart-bar img {
+  width: 100px;
+}
+.cart-bar .product p {
+  color: black;
+}
+.cart-bar .product p a{
+  border-radius: 4px;
+  font-weight: bolder;
+  color: white;
+  background: #0f0844;
+  padding: 5px 35px;
+  position: relative;
+}
+
+.cart-bar .product p a i{
+  font-weight: bolder;
+  margin: 10px;
+  padding: 0px 2.5px;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+

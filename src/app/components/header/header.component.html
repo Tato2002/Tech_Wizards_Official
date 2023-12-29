@@ -1,0 +1,30 @@
+<div class="container" clickOutside (clickOutside)="clickedOutside()">
+  <input type="checkbox" id="check" *ngIf="!isOpen">
+    <label for="check">
+      <i class="fas fa-bars" id="btn" ></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>მენიუ</header>
+    <ul (click)="toggleSidenav()">
+     <li (click)="scrollToTop()" routerLinkActive="active" ><a routerLink="/home">მთავარი<i class="bi bi-house"></i></a></li>
+     <li (click)="scrollToTop()" routerLinkActive="active" ><a routerLink="/Our-Services">სერვისები<i class="bi bi-magic"></i></a></li>
+     <li (click)="scrollToTop()" routerLinkActive="active"  *ngIf="logedIn"><a routerLink="/products">პროდუქცია<i class="bi bi-shop-window"></i></a></li>
+     <li (click)="scrollToTop()" routerLinkActive="active" *ngIf="logedIn" ><a routerLink="/authorization">ავტორიზაცია<i class="bi bi-person-fill-gear"></i></a></li>
+     <li (click)="scrollToTop()" routerLinkActive="active"  *ngIf="logedIn"><a routerLink="/profile">პროფილი<i class="bi bi-person-circle"></i></a></li>
+     <li (click)="scrollToTop()" routerLinkActive="active"  *ngIf="logedIn"><a routerLink="/cart">კალათა<i class="bi bi-cart3"></i></a></li>
+     <li (click)="scrollToTop()" routerLinkActive="active"><a routerLink="/about-us">ჩვენს შესახებ<i class="bi bi-lightning-charge"></i></a></li>
+    </ul>
+   </div>
+   <section></section>
+
+    <div class="dasd">
+          <div class="dasd2">
+            <img (click)="scrollToTop()" class="LOGO" src="assets/LOGOo.png" alt="LOGO" routerLink="/home">
+            <h2 class="tw"></h2>
+          </div>
+    </div>
+
+</div>
+
+
