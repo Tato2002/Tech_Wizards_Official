@@ -10,4 +10,8 @@ export class ScrollTopService {
  scrollTop() {
     window.scrollTo(0, 0);
  }
+
+ scrollToContact(){
+
+ }
 }

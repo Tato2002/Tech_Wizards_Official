@@ -2,7 +2,7 @@
 <div class="container mb-5">
   <h3 class="div text-white text-center">გაეცანით დეტალურად</h3>
   <div class="accordion" id="accordionExample">
-    <div class="accordion-item">
+    <div class="accordion-item" id="commerce">
       <h2 class="accordion-header superitem">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           {{example[0].title}}
@@ -23,7 +23,7 @@
       </div>
 
 
-      <div class="accordion-item" *ngFor="let acItem of accordion">
+      <div class="accordion-item" *ngFor="let acItem of accordion" id="portf">
         <h2 class="accordion-header">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#'+ acItem.collapse" aria-expanded="true" [attr.aria-controls]="'#'+ acItem.collapse">
             {{acItem.title}}

@@ -11,18 +11,18 @@
     </div>
     <div class="link-boxes">
       <ul class="box">
-        <li class="link_name">კომპანია</li>
-        <li routerLink=""><a >კონტაქტი</a></li>
+        <li class="link_name" *ngIf="logedIn">კომპანია</li>
+        <li routerLink="/about-us"><a >კონტაქტი</a></li>
         <li routerLink="/home"><a >მთავარი</a></li>
         <li routerLink="/about-us" (click)="scrollTop()"><a >ჩვენს შესახებ</a></li>
         <li *ngIf="logedIn"><a >რეგისტრაცია</a></li>
       </ul>
       <ul class="box">
         <li class="link_name">ვებ-სერვისები</li>
-        <li><a >ვებსაიტის დიზაინი</a></li>
-        <li><a >პორტფოლიო ვებსაიტი</a></li>
-        <li><a >კომერციული ვებსაიტი</a></li>
-        <li><a >არაკომერციული ვებსაიტი</a></li>
+        <li><a routerLink="/Our-Services">ვებსაიტის დიზაინი</a></li>
+        <li><a routerLink="service-prices">პორტფოლიო ვებსაიტი</a></li>
+        <li><a routerLink="service-prices">კომერციული ვებსაიტი</a></li>
+        <li><a routerLink="service-prices">არაკომერციული ვებსაიტი</a></li>
       </ul>
       <ul class="box" *ngIf="logedIn">
         <li class="link_name">ჩემი პროფილი</li>

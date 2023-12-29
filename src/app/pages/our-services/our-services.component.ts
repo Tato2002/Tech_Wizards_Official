@@ -16,10 +16,10 @@ export class OurServicesComponent implements OnInit{
   }
 
   slides: SlideInterface[] = [
-    { url: '../src/assets/web-gif.gif', title: 'img' },
-    { url: '../src/assets/template.jpg', title: 'img' },
-    { url: '../src/assets/template2.jpg', title: 'img' },
-    { url: '../src/assets/template6.gif', title: 'img' },
+    { url: 'assets/web-gif.gif', title: 'img' },
+    { url: 'assets/template.jpg', title: 'img' },
+    { url: 'assets/template2.jpg', title: 'img' },
+    { url: 'assets/template6.gif', title: 'img' },
   ];
 
 }
