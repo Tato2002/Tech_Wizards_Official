@@ -14,6 +14,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "allowedCommonJsDependencies": [
+              "Typewriter",
               "t-writer"
            ],
             "outputPath": "dist/T_W_Project",

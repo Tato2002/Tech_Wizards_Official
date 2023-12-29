@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterLinkActive } from '@angular/router';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -17,6 +17,7 @@ import { CartComponent } from './pages/cart/cart.component';
 import { ImageSliderModule } from './imageSlider/imageSlider.module';
 import { ClickOutsideDirective } from './components/header/clickOutside.directive';
 import { PassrecoveryComponent } from './pages/passrecovery/passrecovery.component';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -42,7 +43,7 @@ import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditi
     NotFoundComponent,
     ProductDetailsComponent,
     ServicePricesComponent,
-    TermsConditionsComponent
+    TermsConditionsComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +51,8 @@ import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditi
     ImageSliderModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterLinkActive
+    RouterLinkActive,
+    BrowserAnimationsModule,
 ],
   providers: [],
   bootstrap: [AppComponent]
