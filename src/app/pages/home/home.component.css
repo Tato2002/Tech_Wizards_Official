@@ -52,4 +52,7 @@ video {
   border-radius: 50%;
   width: 32px;
 }
+.unmuteVideo i {
+  width: 100%;
+}
 

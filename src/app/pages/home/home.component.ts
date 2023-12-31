@@ -9,12 +9,14 @@ import { Title } from '@angular/platform-browser';
 export class HomeComponent implements OnInit{
 
   changetype:boolean = false;
+  muted:boolean = true;
 
   @ViewChild('myVideo') videoElement!: ElementRef;
 
   unmuteV() {
     (this.videoElement.nativeElement as HTMLVideoElement).muted = !(this.videoElement.nativeElement as HTMLVideoElement).muted;
     this.changetype = !this.changetype;
+    this.muted = !this.muted;
   }
 
   constructor(private title: Title) {}

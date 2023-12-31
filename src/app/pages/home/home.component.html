@@ -2,13 +2,13 @@
 
 <button class="unmuteVideo" (click)="unmuteV()"><i [ngClass]="changetype?'bi bi-volume-up':'bi bi-volume-mute'"></i></button>
 
-<video #myVideo class="intro1" [autoplay]="true" [muted]="true">
+<video #myVideo class="intro1" [autoplay]="true" [muted]="muted">
   <source src="assets/intro1.mp4" type="video/mp4">
 </video>
-<video #myVideo class="intro2" [autoplay]="true" [muted]="true">
+<video #myVideo class="intro2" [autoplay]="true" [muted]="muted">
   <source src="assets/intro2.mp4" type="video/mp4">
 </video>
-<video #myVideo class="intro3" [autoplay]="true" [muted]="true">
+<video #myVideo class="intro3" [autoplay]="true" [muted]="muted">
   <source src="assets/intro3.mp4" type="video/mp4">
 </video>
 <div class="margb"></div>
