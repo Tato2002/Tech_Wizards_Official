@@ -6,7 +6,7 @@
       </div>
       <div class="media-icons">
         <a href="https://www.facebook.com/profile.php?id=61554078124413" target="_blank"><i class="icon"><img src="assets/fb-icon.png" alt="icon"></i></a>
-        <a href="#" target="_blank"><i class="linkedin"><img src="assets/li-icon.png" alt="icon"></i></a>
+        <!-- <a href="" target="_blank"><i class="linkedin"><img src="assets/li-icon.png" alt="icon"></i></a> -->
       </div>
     </div>
     <div class="link-boxes">
@@ -19,10 +19,10 @@
       </ul>
       <ul class="box">
         <li class="link_name">ვებ-სერვისები</li>
-        <li><a routerLink="/Our-Services">ვებსაიტის დიზაინი</a></li>
-        <li><a routerLink="service-prices">პორტფოლიო ვებსაიტი</a></li>
-        <li><a routerLink="service-prices">კომერციული ვებსაიტი</a></li>
-        <li><a routerLink="service-prices">არაკომერციული ვებსაიტი</a></li>
+        <li><a routerLink="/Our-Services" (click)="scrollTop()">ვებსაიტის დიზაინი</a></li>
+        <li><a routerLink="service-prices" (click)="scrollTop()">პორტფოლიო ვებსაიტი</a></li>
+        <li><a routerLink="service-prices" (click)="scrollTop()">კომერციული ვებსაიტი</a></li>
+        <li><a routerLink="service-prices" (click)="scrollTop()">არაკომერციული ვებსაიტი</a></li>
       </ul>
       <ul class="box" *ngIf="logedIn">
         <li class="link_name">ჩემი პროფილი</li>
@@ -34,7 +34,7 @@
   </div>
   <div class="bottom-details">
     <div class="bottom_text">
-      <span class="copyright_text">Copyright © 2023 <a>Tech Wizards.</a>All rights reserved</span>
+      <span class="copyright_text" style="cursor: none;">Copyright © 2023 <a>Tech Wizards.</a>All rights reserved</span>
       <span class="policy_terms">
         <a *ngIf="logedIn">Privacy policy</a>
         <a routerLink="/terms-conditions" (click)="scrollTop()">წესები & პირობები</a>

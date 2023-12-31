@@ -70,13 +70,13 @@ export class ProductsComponent implements OnInit {
    }
 
    ngOnInit() {
-    this.productsService.getAllProducts().subscribe((products: Product[]) => {
-       this.products = products;
-    });
+    // this.productsService.getAllProducts().subscribe((products: Product[]) => {
+    //    this.products = products;
+    // });
    }
 
    onProductClick(productId: number): void {
-    this.router.navigate(['/product-details', productId]);
+    // this.router.navigate(['/product-details', productId]);
   }
 
 

@@ -1,6 +1,5 @@
 import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { catchError } from 'rxjs';
 import { Product } from 'src/app/Models/product.model';
 import { productsService } from 'src/app/services/products.service';
 
@@ -23,25 +22,20 @@ constructor(private activatedrout: ActivatedRoute, private productsservice: prod
 
  ngOnInit() {
 
-//   this.productsservice.getAllProducts().subscribe((products: Product[]) => {
-//     this.products = products;
-//  });
+  // const productId = this.activatedrout.snapshot.paramMap.get('id');
+  // if (productId) {
+  //   this.productsservice.getProductDetails(Number(productId))
+  //   .subscribe({
+  //     next: (product) => {
+  //       this.products = product;
+  //     },
+  //     error: (error) => {
+  //       console.error('Error fetching product:', error);
 
-
-  const productId = this.activatedrout.snapshot.paramMap.get('id');
-  if (productId) {
-    this.productsservice.getProductDetails(Number(productId))
-    .subscribe({
-      next: (product) => {
-        this.products = product;
-      },
-      error: (error) => {
-        console.error('Error fetching product:', error);
-
-      }
-    });
-    console.log(productId)
-  }
+  //     }
+  //   });
+  //   console.log(productId)
+  // }
 
 
 
