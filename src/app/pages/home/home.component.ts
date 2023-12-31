@@ -7,14 +7,14 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit{
-  hoverText = `ვებ დეველოპმენტი საქართველოში ჯერ კიდევ ვითარდება, დამკვიდრებულ ბაზრებთან შედარებით ნაკლები სააგენტოები და თავისუფალი დეველოპერებია. რის გამოც არის დაბალი კონკურენცია და პოტენციურად დაბალი ფასები.`
-  hoverText2 = ' ხოლო ჩვენთან... ფასები უფრო დაბალია!!!'
 
+  changetype:boolean = false;
 
   @ViewChild('myVideo') videoElement!: ElementRef;
 
   unmuteV() {
     (this.videoElement.nativeElement as HTMLVideoElement).muted = !(this.videoElement.nativeElement as HTMLVideoElement).muted;
+    this.changetype = !this.changetype;
   }
 
   constructor(private title: Title) {}

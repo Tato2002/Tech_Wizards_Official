@@ -13,6 +13,9 @@ video {
   width: 100%;
   height: fit-content;
 }
+.margb {
+  margin-bottom: 400px;
+}
 
 @media only screen and (max-width:1400px) {
   .intro3 {
@@ -47,5 +50,6 @@ video {
   left: 8px;
   top: 45%;
   border-radius: 50%;
+  width: 32px;
 }
 
