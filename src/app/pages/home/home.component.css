@@ -50,8 +50,11 @@ video {
   left: 8px;
   top: 45%;
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .unmuteVideo i {
   width: 100%;
