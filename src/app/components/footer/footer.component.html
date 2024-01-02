@@ -13,8 +13,8 @@
     <div class="link-boxes">
       <ul class="box">
         <li class="link_name" *ngIf="logedIn">კომპანია</li>
-        <li routerLink="/about-us"><a >კონტაქტი</a></li>
-        <li routerLink="/home"><a >მთავარი</a></li>
+        <li routerLink="/about-us" (click)="scrollTop()"><a >კონტაქტი</a></li>
+        <li routerLink="/home" (click)="scrollTop()"><a >მთავარი</a></li>
         <li routerLink="/about-us" (click)="scrollTop()"><a >ჩვენს შესახებ</a></li>
         <li *ngIf="logedIn"><a >რეგისტრაცია</a></li>
       </ul>

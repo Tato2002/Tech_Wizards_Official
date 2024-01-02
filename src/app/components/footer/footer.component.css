@@ -13,7 +13,6 @@ body{
 }
 footer{
   z-index: 91000;
-  margin-top: 100px;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(220, 235, 255, 0.8));
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   width: 100%;

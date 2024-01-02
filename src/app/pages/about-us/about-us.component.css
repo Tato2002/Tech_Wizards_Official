@@ -34,8 +34,6 @@
   -webkit-transition: all .1s;
   transition: all .1s;
   margin-top: 45px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#002759), to(#002b64));
-  background: linear-gradient(to bottom, #002759, #002b64);
 }
 
 .team_section .team_container .box .img-box {
@@ -48,17 +46,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
 }
 
 
 .team_section .team_container .box .img-box img {
   width: 120px;
-  border-radius: 100%;
-  border: 5px solid #ffffff;
+  border-radius: 50%;
   animation: border-gradient 5s infinite alternate linear;
   animation: pulse-shadow 5s infinite ease-in-out;
   animation: pulsatingShadow 5s ease-in-out infinite;
-
+}
+.team_section .team_container .box .img-box img:hover {
+  box-shadow: 0px 0px 20px 10px rgba(241, 241, 243, 0.5) !important;
 }
 
 .team_section .team_container .box .detail-box {
@@ -87,20 +87,20 @@
 }
 
 .team_section .team_container .box .social_box a:hover {
-  color: #00bbf0;
+  color: #6C00B5;
 }
 
 
 
 @keyframes pulsatingShadow {
   0% {
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 255, 0.5); /* Start with no shadow */
+    box-shadow: 0px 0px 0px 0px #e8e6ea;
   }
   50% {
-    box-shadow: 0px 0px 20px 10px rgba(0, 0, 255, 0.5); /* Expand to full shadow */
+    box-shadow: 0px 0px 7px 3px #e8e6ea;
   }
   100% {
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 255, 0.5); /* Collapse back to no shadow */
+    box-shadow: 0px 0px 0px 0px #e8e6ea;
   }
 }
 
