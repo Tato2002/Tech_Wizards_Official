@@ -25,6 +25,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 import { ServicePricesComponent } from './pages/service-prices/service-prices.component';
 import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditions.component';
+import { FacebookChatComponent } from './components/facebook-chat/facebook-chat.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditi
     ProductDetailsComponent,
     ServicePricesComponent,
     TermsConditionsComponent,
+    FacebookChatComponent,
   ],
   imports: [
     BrowserModule,
