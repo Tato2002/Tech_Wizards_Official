@@ -24,6 +24,7 @@
     "@angular/platform-server": "^16.1.0",
     "@angular/router": "^16.1.0",
     "@nguniversal/express-engine": "^16.2.0",
+    "@types/facebook-js-sdk": "^3.3.10",
     "bootstrap-icons": "^1.11.2",
     "express": "^4.15.2",
     "rxjs": "~7.8.0",
