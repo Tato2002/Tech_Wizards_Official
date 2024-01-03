@@ -1,1 +1,1 @@
-declare var FB: any;
+// declare var FB: any;
